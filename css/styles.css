@@ -1,0 +1,31 @@
+/* styles.css - EXEMPLO mínimo mobile-first */
+:root{
+  --max-width: 1100px;
+  --gap: 1rem;
+  --bg: #ffffff;
+  --text: #111;
+  --accent: #0077b6;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+header{background:#f6f9fc;padding:.5rem 0;border-bottom:1px solid #e6eef6}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:var(--gap)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+a{color:var(--accent);text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+#hero{padding:1rem 0}
+h1,h2,h3{color:var(--text)}
+.projeto{border-top:1px solid #eee;padding:1rem 0}
+fieldset{border:1px solid #ddd;padding:1rem;margin-bottom:1rem}
+label{display:block;margin-top:.5rem}
+input,select,textarea,button{width:100%;padding:.6rem;margin-top:.2rem;border:1px solid #ccc;border-radius:6px}
+.actions{display:flex;gap:.5rem}
+button.ghost{background:transparent;border:1px solid #ccc}
+
+/* desktop */
+@media(min-width:800px){
+  .projeto{display:grid;grid-template-columns:1fr 260px;gap:1rem}
+  .actions{width:auto}
+}
