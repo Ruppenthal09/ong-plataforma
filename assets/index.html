@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Exemplo — Missão e Contato</title>
+  <meta name="description" content="ONG Exemplo — fortalecendo comunidades por meio de projetos sociais." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Página inicial - ONG Exemplo">
+        <img src="assets/img/logo.png" alt="Logotipo ONG Exemplo" width="160" />
+      </a>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Transformando vidas com ações locais</h1>
+        <p>Somos a ONG Exemplo. Nossa missão é fortalecer comunidades por meio de educação, saúde e inclusão.</p>
+        <img src="assets/img/projeto-1.jpg" alt="Voluntários em ação" />
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Missão, visão e valores</h2>
+        <article>
+          <h3>Missão</h3>
+          <p>Promover oportunidades e apoio para famílias em situação de vulnerabilidade.</p>
+        </article>
+        <article>
+          <h3>Visão</h3>
+          <p>Ser referência regional em projetos de inclusão social até 2030.</p>
+        </article>
+        <article>
+          <h3>Valores</h3>
+          <ul>
+            <li>Transparência</li>
+            <li>Respeito</li>
+            <li>Participação comunitária</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Contato</h2>
+        <address>
+          <p>Rua Exemplo, 123 — Bairro, Cidade/UF</p>
+          <p>Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
+          <p>Email: <a href="mailto:contato@ongexemplo.org">contato@ongexemplo.org</a></p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> ONG Exemplo — Transparência e compromisso</p>
+    </div>
+  </footer>
+
+  <script>
+    // pequeno script para ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

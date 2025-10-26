@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro — Voluntário / Doador</title>
+  <meta name="description" content="Formulário de cadastro para voluntários e doadores." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logotipo ONG Exemplo" width="140" /></a>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="form-title">
+      <div class="container">
+        <h1 id="form-title">Formulário de Cadastro</h1>
+
+        <form id="formCadastro" action="#" method="post" novalidate>
+          <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" required autocomplete="name" placeholder="Nome completo" />
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="seu@exemplo.com" />
+
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" type="text" inputmode="numeric" maxlength="14" required placeholder="000.000.000-00" />
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel" maxlength="15" placeholder="(00) 90000-0000" />
+
+            <label for="nascimento">Data de nascimento</label>
+            <input id="nascimento" name="nascimento" type="date" required />
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="cep">CEP</label>
+            <input id="cep" name="cep" type="text" inputmode="numeric" maxlength="9" required placeholder="00000-000" />
+
+            <label for="endereco">Endereço</label>
+            <input id="endereco" name="endereco" type="text" required />
+
+            <label for="cidade">Cidade</label>
+            <input id="cidade" name="cidade" type="text" required />
+
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecione</option>
+              <option value="SP">SP</option>
+              <option value="RJ">RJ</option>
+              <option value="MG">MG</option>
+              <!-- completar com demais estados -->
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferências</legend>
+            <label for="perfil">Sou</label>
+            <select id="perfil" name="perfil" required>
+              <option value="">Selecione</option>
+              <option value="voluntario">Voluntário</option>
+              <option value="doador">Doador</option>
+              <option value="visitante">Visitante</option>
+            </select>
+
+            <label for="mensagem">Mensagem / experiência</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos sobre você (opcional)"></textarea>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit">Enviar cadastro</button>
+            <button type="reset" class="ghost">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script src="js/masks-validation.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
