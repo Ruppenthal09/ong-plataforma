@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — ONG Exemplo</title>
+  <meta name="description" content="Conheça os projetos sociais da ONG Exemplo e como participar ou doar." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logotipo ONG Exemplo" width="140" /></a>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="lista-projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <h1 id="projetos-title">Nossos Projetos</h1>
+
+        <article class="projeto" aria-labelledby="proj1-title">
+          <h2 id="proj1-title">Projeto Educação para Todos</h2>
+          <p>Objetivo: alfabetização de jovens e adultos.</p>
+          <figure>
+            <img src="assets/img/projeto-1.jpg" alt="Aulas comunitárias" />
+            <figcaption>Oficinas e aulas presenciais</figcaption>
+          </figure>
+          <dl>
+            <dt>Indicador</dt><dd>200 pessoas beneficiadas no último ano</dd>
+            <dt>Categoria</dt><dd>Educação</dd>
+          </dl>
+          <a href="#voluntariado" class="btn">Quero ser voluntário</a>
+          <a href="#doar" class="btn ghost">Doar para esse projeto</a>
+        </article>
+
+        <article class="projeto" aria-labelledby="proj2-title">
+          <h2 id="proj2-title">Projeto Saúde Comunitária</h2>
+          <p>Objetivo: levar atendimento básico e campanhas de prevenção.</p>
+          <figure>
+            <img src="assets/img/projeto-2.jpg" alt="Atendimento de saúde" />
+            <figcaption>Campanhas de saúde e prevenção</figcaption>
+          </figure>
+          <dl>
+            <dt>Indicador</dt><dd>1.200 atendimentos no último semestre</dd>
+            <dt>Categoria</dt><dd>Saúde</dd>
+          </dl>
+          <a href="#voluntariado" class="btn">Quero ser voluntário</a>
+          <a href="#doar" class="btn ghost">Doar para esse projeto</a>
+        </article>
+      </div>
+    </section>
+
+    <aside id="voluntariado" aria-labelledby="volunt-title">
+      <div class="container">
+        <h2 id="volunt-title">Voluntariado</h2>
+        <p>Inscrições abertas — <a href="cadastro.html">cadastre-se aqui</a> para candidatar-se às vagas.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
